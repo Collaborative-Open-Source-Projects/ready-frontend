@@ -1,3 +1,9 @@
+## Ready React
+
+This project aims to provide a comprehensive collection of React components, fonts, typography, and libraries, all readily available for developers to use in their projects. Whether you're building a new application or enhancing an existing one, Ready React is here to streamline your development process.
+
+Explore a variety of pre-built React components that you can easily integrate into your projects. Our components are designed with usability in mind, allowing for quick integration and customization.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
