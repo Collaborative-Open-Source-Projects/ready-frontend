@@ -1,4 +1,4 @@
-## Ready React
+## Ready Frontend
 
 This project aims to provide a comprehensive collection of React components, fonts, typography, and libraries, all readily available for developers to use in their projects. Whether you're building a new application or enhancing an existing one, Ready React is here to streamline your development process.
 
