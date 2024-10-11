@@ -36,7 +36,6 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              className="dark:invert"
               src="https://nextjs.org/icons/vercel.svg"
               alt="Vercel logomark"
               width={20}
