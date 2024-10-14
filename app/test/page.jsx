@@ -11,21 +11,16 @@ const ComponentView = () => {
     return <div>Loading...</div>;
   }
 
-  const ButtonComponent = ({ filename }) => {
-    const LazyComponent = React.lazy(() =>
+  const ButtonComponent = React.lazy(() =>
       import(`/components/Inputs/Buttons/${filename}.jsx`)
     );
-    return (
-      <Suspense fallback={<div className="text-gray-500">Loading...</div>}>  
-        <LazyComponent className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition" />
-      </Suspense>
-    );
-  };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-6">
-          <ButtonComponent filename={filename} />
-    </div>
+    <Suspense fallback={<div className="text-gray-500">Loading Component...</div>}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-6">
+        <ButtonComponent filename={filename} />
+      </div>
+    </Suspense>
   );
 };
 
