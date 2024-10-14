@@ -1,10 +1,17 @@
 'use client';
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 const ComponentView = () => {
+  return (
+    <Suspense fallback={<div className="text-gray-500">Loading Component...</div>}>
+      <ButtonLoader />
+    </Suspense>
+  );
+};
 
-  const searchParams = useSearchParams(); // Use useSearchParams hook
+const ButtonLoader = () => {
+  const searchParams = useSearchParams();
   const filename = searchParams.get('filename');
 
   if (!filename) {
@@ -12,15 +19,15 @@ const ComponentView = () => {
   }
 
   const ButtonComponent = React.lazy(() =>
-      import(`/components/Inputs/Buttons/${filename}.jsx`)
-    );
+    import(`/components/Inputs/Buttons/${filename}.jsx`)
+  );
 
   return (
-    <Suspense fallback={<div className="text-gray-500">Loading Component...</div>}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-6">
-        <ButtonComponent filename={filename} />
-      </div>
-    </Suspense>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-6">
+      <Suspense fallback={<div className="text-gray-500">Loading Component...</div>}>
+        <ButtonComponent />
+      </Suspense>
+    </div>
   );
 };
 
