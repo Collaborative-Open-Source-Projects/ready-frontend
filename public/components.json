@@ -1,14 +1,16 @@
 {
-    "buttons": {
-      "button1": {
-        "name": "Button 1",
-        "path": "components/Inputs/Buttons",
-        "filename": "Button1"
-      },
-      "button2": {
-        "name": "Button 2",
-        "path": "components/Inputs/Buttons",
-        "filename": "Button2"
+  "inputs": {
+      "buttonss": {
+          "button1": {
+              "name": "Button 1",
+              "path": "components/Inputs/Buttons",
+              "filename": "Button1"
+          },
+          "button2": {
+              "name": "Button 2",
+              "path": "components/Inputs/Buttons",
+              "filename": "Button2"
+          }
       }
-    }
+  }
 }
