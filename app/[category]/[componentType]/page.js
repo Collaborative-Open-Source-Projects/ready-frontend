@@ -1,12 +1,14 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ComponentGrid from '@/app/components/ComponentGrid';
 import Header from '@/app/components/Header';
 import { useRouter, useParams } from 'next/navigation';
+import Footer from '@/app/components/Footer';
 
 const App = () => {
     const router = useRouter();
     const {category, componentType } = useParams();
+    const [ components, setComponents] = useState();
     
     useEffect(() => {
       const fetchComponents = async () => {
@@ -15,14 +17,14 @@ const App = () => {
           const data = await response.json();
   
           if (data[category][componentType]) {
-            // console.log(data[category]);
             console.log(data[category][componentType])
+            setComponents(data[category][componentType])
           } else {
-            console.log(null);
+            console.log("404 Page-category/element doesn't exist");
           }
         } catch (error) {
           console.error('Error fetching components:', error);
-          console.log(null);
+          console.log("Error fetching components");
         }
       };
   
@@ -32,10 +34,8 @@ const App = () => {
     return (
         <div>
             <Header />
-            {category}
-            <br></br>
-            {componentType}
-            <h1>Hello World</h1>
+            <ComponentGrid components={components} />
+            <Footer />
         </div>
     )
 }

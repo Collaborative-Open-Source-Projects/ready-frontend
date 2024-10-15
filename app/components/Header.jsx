@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <header className="bg-white dark:bg-black text-black dark:text-white">
-        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-[72px] max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
           <Logo />
           <div className="flex flex-1 items-center justify-end md:justify-between">
             <nav aria-label="Global" className="hidden md:block">
