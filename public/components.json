@@ -1,0 +1,25 @@
+{
+    "inputs": {
+        "buttons": [
+            {
+                "name": "Button 1",
+                "path": "components/Inputs/Buttons",
+                "filename": "Button1",
+                "link": "/test"
+
+            },
+            {
+                "name": "Button 2",
+                "path": "components/Inputs/Buttons",
+                "filename": "Button2",
+                "link": "/test"
+            },
+            {
+                "name": "Button 3",
+                "path": "components/Inputs/Buttons",
+                "filename": "Button3",
+                "link": "/test"
+            }
+        ]
+    }
+}
