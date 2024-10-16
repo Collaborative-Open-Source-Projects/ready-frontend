@@ -4,34 +4,22 @@ import ThemeSwitcher from "./ThemeSwitcher";
 const Header = () => {
   return (
     <div>
-      <header className="bg-white dark:bg-black text-black dark:text-white">
-        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-          <Logo />
-          <div className="flex flex-1 items-center justify-end md:justify-between">
-            <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-6 text-sm">
-                <li>
-                  <a className="text-gray-900 dark:text-gray-300 transition hover:text-gray-700 dark:hover:text-gray-500" href="#"> 
-                    Home 
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-900 dark:text-gray-300 transition hover:text-gray-700 dark:hover:text-gray-500" href="#"> 
-                    About 
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-900 dark:text-gray-300 transition hover:text-gray-700 dark:hover:text-gray-500" href="#"> 
-                    FAQ 
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-900 dark:text-gray-300 transition hover:text-gray-700 dark:hover:text-gray-500" href="#"> 
-                    Support 
-                  </a>
-                </li>
-              </ul>
-            </nav>
+      <header className="py-5	md:py-3.5 bg-customLight-background text-customLight-text dark:bg-customDark-background dark:text-customDark-text border-b-4">
+        <div className="wrapper flex items-center justify-between flex-col md:flex-row">
+          <div className="flex-col gap-3 flex items-center md:flex-row md:gap-6">
+            <Logo />
+            <ul className="flex items-center gap-8">
+              <li className="text-lg font-light"><a href="#">Home</a></li>
+              <li className="text-lg font-light"><a href="#">About</a></li>
+              <li className="text-lg font-light"><a href="#">Components</a></li>
+              <li className="text-lg font-light"><a href="#">Docs</a></li>
+            </ul>
+          </div>
+
+          <div className="mt-5 flex items-center gap-4 md:mt-0">
+            <a href="#">
+              <button className="btn bg-customLight-firstColor dark:bg-customDark-secondColor">Login</button>
+            </a>
             <ThemeSwitcher />
           </div>
         </div>

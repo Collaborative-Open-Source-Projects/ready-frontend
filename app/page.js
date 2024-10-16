@@ -1,106 +1,245 @@
-import Image from "next/image";
+import Image from 'next/image';
+
+// Components
 import Header from "./components/Header";
+import Footer from './components/Footer';
+import Logo from './components/Logo';
 
 export default function Home() {
   return (
-    <div>
-
+    <div className="homepage">
         <Header />
 
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <div className="hero py-52">
+            <div className="wrapper flex items-center justify-center gap-40 w-full">
+              <div className='text w-1/2'>
+                <h1 className='text-7xl font-semibold max-w-3xl leading-tight'>Free Ready Components To Use</h1>
+                <p className='text-2xl font-light max-w-2xl text-customLight-firstColor dark:text-customLight-thirdColor'>Save time and enhance your project by this collection of free and ready-to-use components</p>
+                <a href="#">
+                  <button className="btn text-xl mt-3 bg-customLight-firstColor dark:bg-customDark-secondColor">Explore</button>
+                </a>
+              </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+              <div className='logo'>
+                <Logo />
+              </div>
+            </div>
+
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="features">
+          <div className='wrapper'>
+            <div className="title">
+              <h2>We offer you</h2>
+            </div>
+
+            <div className="top-3-features flex items-center justify-center flex-wrap gap-16">
+                <div className="fea bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor">
+                  <Image src={require('./Images/Icons/components-icon-white.png')}
+                        alt="icon"
+                        width={64} 
+                        height={64} 
+                  />
+                  <h3>200+ Component</h3>
+                  <p>Various components such as a header, testimonials, buttons and more.</p>
+                </div>
+
+                <div className="fea bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor">
+                  <Image src={require('./Images/Icons/clock-icon-white.png')}
+                        alt="icon"
+                        width={64} 
+                        height={64} 
+                  />
+                  <h3>Save Time</h3>
+                  <p>Save your time with a ready-to-use and editable component.</p>
+                </div>
+
+                <div className="fea bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor">
+                  <Image src={require('./Images/Icons/improve-icon-white.png')}
+                        alt="icon"
+                        width={64} 
+                        height={64} 
+                  />
+                  <h3>Improve Yourself</h3>
+                  <p>Level up your skills and challenge developers in our monthly competitions.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="how-work">
+          <div className="wrapper">
+            <div className="center-title">
+                <h2>How ReadyFrontend Work?</h2>
+                <p className='text-customLight-firstColor dark:text-customLight-thirdColor'>Choose the component you need and copy the code, easier than drinking water!</p>
+            </div>
+
+            <div className="comp-code flex justify-center flex-col gap-32 md:flex-row">
+              <div className="comp border-8 border-customLight-firstColor dark:border-customDark-firstColor">
+                <div className="comp-title">
+                  <h3>Login</h3>
+                  <p className=''>Welcome Back!</p>
+                </div>
+
+                <div className="inp">
+                  <label for='username'>Username</label>
+                  <input className="border-4 border-customLight-firstColor dark:border-customDark-firstColor" type="text" id='username' />
+                </div>
+                <div className="inp">
+                  <label for='pass'>password</label>
+                  <input className="border-4 border-customLight-firstColor dark:border-customDark-firstColor" type="password" id='pass' />
+                </div>
+
+                <button className="bg-customLight-firstColor dark:bg-customDark-firstColor">LOGIN</button>
+
+                <p className="forgot-pas">New User? <b className="text-customLight-text dark:text-customDark-background underline">Signup Here</b></p>
+              </div>
+
+              <div className="code">
+                  <div className="tools">
+                    <div className="bg-customLight-firstColor dark:bg-customDark-firstColor">
+                      <p className="">HTML</p>
+                    </div>
+                    <div className="bg-customLight-firstColor dark:bg-customDark-firstColor">
+                      <p className="">JSX</p>
+                    </div>
+                    <div className="bg-customLight-firstColor dark:bg-customDark-firstColor">
+                      <p className="">CSS</p>
+                    </div>
+                    <div className="bg-customLight-firstColor dark:bg-customDark-firstColor">
+                      <p className="">Tailwind</p>
+                    </div>
+                    <div className="bg-customLight-firstColor dark:bg-customDark-firstColor">
+                      <p className="">Sass</p>
+                    </div>
+                  </div>
+
+                  <div className="code-screen bg-customLight-thirdColor dark:bg-customLight-background">
+                    <h1 className="ele-center">The Code Here</h1>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='components-types'>
+            <div className='wrapper'>
+              <div className="center-title">
+                <h2>Components Types</h2>
+                <p className='text-customLight-firstColor dark:text-customLight-thirdColor'>ReadyFrontend give you group of 30+ different types of components!</p>
+              </div>
+
+              <div className='types flex items-center justify-center flex-wrap gap-12'>
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/header-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>Headers</h4>
+                  <p>12 Component</p>
+                </div>
+
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/button-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>Buttons</h4>
+                  <p>12 Component</p>
+                </div>
+
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/alert-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>Notifications</h4>
+                  <p>12 Component</p>
+                </div>
+
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/404page-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>404 Page</h4>
+                  <p>12 Component</p>
+                </div>
+
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/testimonial-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>Testimonials</h4>
+                  <p>12 Component</p>
+                </div>
+
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/header-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>More</h4>
+                  <p>Many components to help you!</p>
+                </div>
+
+                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
+                  <Image src={require('./Images/Icons/header-icon-white.png')} alt='icon'
+                         width={45}
+                         height={45}
+                  />
+                  <h4>More</h4>
+                  <p>Many components to help you!</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div className='discord-server'>
+          <div className='wrapper bg-gradient-to-l from-customLight-firstColor to-customLight-secondColor dark:from-customDark-firstColor dark:to-customDark-secondColor flex items-center justify-between flex-col md:flex-row'>
+            <div className='text'>
+              <div className='online-users'>
+                <div className='circle'></div>
+                <p>100 Developer Online</p>
+                <div className='circle'></div>
+              </div>
+
+              <h2>Join Our Discrod Server</h2>
+
+              <ul className='server-features'>
+                <li>
+                  <Image src={require('./Images/Icons/success-icon-white.png')}
+                         alt="icon"
+                  />
+                  <p>Meet and connect with developers</p>
+                </li>
+
+                <li>
+                  <Image src={require('./Images/Icons/success-icon-white.png')}
+                         alt="icon"
+                  />
+                  <p>Stay up to date with our news</p>
+                </li>
+
+                <li>
+                  <Image src={require('./Images/Icons/success-icon-white.png')}
+                         alt="icon"
+                  />
+                  <p>Know the challenge dates in advance.</p>
+                </li>
+              </ul>
+
+              <button className='btn bg-customLight-firstColor dark:bg-customDark-background'>Join</button>
+            </div>
+
+            <div className='image'>
+              <Image src={require('./Images/discord.png')} alt='discord-icon-image' />
+            </div>
+          </div>
+        </div>
+
+        <Footer />
     </div>
   );
 }

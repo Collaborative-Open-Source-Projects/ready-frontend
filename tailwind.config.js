@@ -9,9 +9,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+        customLight: {
+          text: '#000000',
+          textInBlack: '#ffffff',
+          background: '#ffffff',
+          firstColor: '#363636',
+          secondColor: '#707070',
+          thirdColor: '#DDDDDD'
+        },
+        customDark: {
+          text: '#ffffff',
+          textInBlack: '#000000',
+          background: '#001F3F',
+          firstColor: '#165981',
+          secondColor: '#2F6F97',
+          thirdColor: '#6A9AB0'
+        },
+    },
     },
   },
   plugins: [],

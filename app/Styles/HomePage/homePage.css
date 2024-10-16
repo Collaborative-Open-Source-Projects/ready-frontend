@@ -1,0 +1,180 @@
+.homepage .hero .wrapper .text .btn {
+  font-size: 20px;
+  width: 6em;
+}
+.homepage .hero .wrapper .logo img {
+  width: 20em;
+}
+.homepage .how-work {
+  padding: 60px 0;
+}
+.homepage .how-work .wrapper .comp-code {
+  margin-top: 3em;
+}
+.homepage .how-work .wrapper .comp-code .comp {
+  color: #000;
+  background-color: #FFF;
+  border-radius: 7px;
+  padding: 14px;
+  width: 23em;
+  height: 28em;
+}
+.homepage .how-work .wrapper .comp-code .comp .comp-title {
+  margin-bottom: 1em;
+}
+.homepage .how-work .wrapper .comp-code .comp .comp-title h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.homepage .how-work .wrapper .comp-code .comp .comp-title p {
+  font-size: 24px;
+  color: #454545;
+  margin-top: -6px;
+}
+.homepage .how-work .wrapper .comp-code .comp .inp {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.homepage .how-work .wrapper .comp-code .comp .inp label {
+  font-size: 19px;
+}
+.homepage .how-work .wrapper .comp-code .comp .inp input {
+  background-color: #FFF;
+  border-radius: 4px;
+  height: 2.4em;
+  width: 80%;
+}
+.homepage .how-work .wrapper .comp-code .comp button {
+  margin: 15px 0;
+  color: #FFF;
+  font-size: 24px;
+  width: 90%;
+  height: 2.2em;
+  border-radius: 5px;
+}
+.homepage .how-work .wrapper .comp-code .code .tools {
+  display: flex;
+  align-items: center;
+}
+.homepage .how-work .wrapper .comp-code .code .tools div {
+  position: relative;
+  padding: 6px 18px;
+}
+.homepage .how-work .wrapper .comp-code .code .tools div p {
+  font-size: 22px;
+  color: #FFF;
+}
+.homepage .how-work .wrapper .comp-code .code .code-screen {
+  position: relative;
+  height: 25em;
+  width: 35em;
+}
+.homepage .how-work .wrapper .comp-code .code .code-screen h1 {
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+}
+.homepage .features {
+  margin: 6em 0 14em;
+}
+.homepage .features .wrapper .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.homepage .features .wrapper .top-3-features .fea {
+  border-radius: 7px;
+  width: 28em;
+  height: 16em;
+  padding: 15px;
+}
+.homepage .features .wrapper .top-3-features .fea h3 {
+  font-size: 25px;
+  margin: 18px 0;
+}
+.homepage .features .wrapper .top-3-features .fea p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 380px;
+}
+.homepage .components-types {
+  padding: 14em 0;
+}
+.homepage .components-types .wrapper .types {
+  margin-top: 3em;
+}
+.homepage .components-types .wrapper .types .type {
+  border-radius: 7px;
+  width: 26em;
+  height: 12em;
+  padding: 15px;
+  transition: 0.4s;
+}
+.homepage .components-types .wrapper .types .type:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.homepage .components-types .wrapper .types .type h4 {
+  font-size: 25px;
+  margin: 18px 0;
+}
+.homepage .components-types .wrapper .types .type p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 380px;
+}
+.homepage .discord-server {
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+}
+.homepage .discord-server .wrapper {
+  padding: 25px 30px;
+  width: 55%;
+  border-radius: 12px;
+}
+.homepage .discord-server .wrapper .text {
+  width: 70%;
+}
+.homepage .discord-server .wrapper .text .online-users {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.homepage .discord-server .wrapper .text .online-users .circle {
+  background-color: #25FF2C;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.homepage .discord-server .wrapper .text .online-users p {
+  font-size: 19px;
+}
+.homepage .discord-server .wrapper .text h2 {
+  font-size: 44px;
+  font-weight: 700;
+}
+.homepage .discord-server .wrapper .text .server-features {
+  margin-top: 10px;
+}
+.homepage .discord-server .wrapper .text .server-features li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+.homepage .discord-server .wrapper .text .server-features li img {
+  width: 28px;
+}
+.homepage .discord-server .wrapper .text .server-features li p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.homepage .discord-server .wrapper .text .btn {
+  font-size: 22px;
+  text-transform: uppercase;
+  width: 6em;
+}
+.homepage .discord-server .wrapper .image img {
+  width: 22em;
+}/*# sourceMappingURL=homePage.css.map */

@@ -22,14 +22,14 @@ const Logo = () => {
         <div>
             {theme === "dark" ? (    
                 <Image 
-                    src="/website_logo_dark.jpg"
+                    src={require('../Images/Logo/logo-white.png')}
                     width={50} 
                     height={100} 
                     alt="Logo"
                 />
             ) : (
                 <Image 
-                    src="/website_logo_light.jpg"
+                    src={require('../Images/Logo/logo-black.png')}
                     width={50} 
                     height={100} 
                     alt="Logo"

@@ -1,0 +1,262 @@
+.homepage {
+
+    .hero {
+        .wrapper {
+
+            .text {
+                .btn {
+                   font-size: 20px;
+                   width: 6em;
+                }
+            }
+
+            .logo {
+                img {
+                    width: 20em
+                }
+            }
+        }
+
+    }
+
+    .how-work {
+        padding: 60px 0;
+
+        .wrapper {
+            .comp-code {
+                margin-top: 3em;
+
+                .comp {
+                    color:#000;
+                    background-color: #FFF;
+                    border-radius: 7px;
+                    padding: 14px;
+                    width: 23em;
+                    height: 28em;
+    
+                    .comp-title {
+                        margin-bottom: 1em;
+                        h3 {
+                            font-size: 40px;
+                            font-weight: 700;
+                        }
+    
+                        p {
+                            font-size: 24px;
+                            color: #454545;
+                            margin-top: -6px
+                        }
+                    }
+    
+                    .inp {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 5px;
+
+                        label {
+                            font-size: 19px;
+                        }
+    
+                        input {
+                            background-color: #FFF;
+                            border-radius: 4px;
+                            height: 2.4em;
+                            width: 80%;
+                        }
+                    }
+    
+                    button {
+                        margin: 15px 0;
+                        color: #FFF;
+                        font-size: 24px;
+                        width: 90%;
+                        height: 2.2em;
+                        border-radius: 5px;
+                    }
+    
+                    .forgot-pass {
+    
+                        b {
+    
+                        }
+                    }
+                }
+
+                .code {
+                    .tools {
+                        display: flex;
+                        align-items: center;
+
+                        div {
+                            position: relative;
+                            padding: 6px 18px;
+
+                            p {
+                                font-size: 22px;
+                                color: #FFF;
+                            }
+                        } 
+                    }
+
+                    .code-screen {
+                        position: relative;
+                        height: 25em;
+                        width: 35em;
+                        
+                        h1 {
+                            color: #000;
+                            font-size: 50px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .features {
+        margin: 6em 0 14em;
+
+        .wrapper {
+
+            .title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .top-3-features {
+
+                .fea {
+                    border-radius: 7px;
+                    width: 28em;
+                    height: 16em;
+                    padding: 15px;
+    
+                    img {
+    
+                    }
+    
+                    h3 {
+                        font-size: 25px;
+                        margin: 18px 0
+                    }
+    
+                    p {
+                        font-size: 18px;
+                        font-weight: 300;
+                        max-width: 380px;
+                    }
+                }
+            }
+        }
+    }
+
+    .components-types {
+        padding: 14em 0;
+
+        .wrapper {
+
+            .types {
+                margin-top: 3em;
+
+                .type {
+                    border-radius: 7px;
+                    width: 26em;
+                    height: 12em;
+                    padding: 15px;
+                    transition: 0.4s;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        cursor: pointer;
+                    }
+
+                    img {
+
+                    }
+
+                    h4 {
+                        font-size: 25px;
+                        margin: 18px 0;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 300;
+                        max-width: 380px;
+                    }
+                }
+            }
+        }
+    }
+
+    .discord-server {
+        display: flex;
+        justify-content: center;
+        color: #FFF;
+
+        .wrapper {
+            padding: 25px 30px;
+            width: 55%;
+            border-radius: 12px;
+
+            .text {
+                width: 70%;
+                .online-users {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    
+                    .circle {
+                        background-color: #25FF2C;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+
+                    }
+
+                    p {
+                        font-size: 19px
+                    }
+                }
+
+                h2 {
+                    font-size: 44px;
+                    font-weight: 700;
+                }
+
+                .server-features {
+                    margin-top: 10px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        margin-bottom: 18px;
+
+                        img {
+                            width: 28px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .btn {
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    width: 6em;
+                }
+            }
+
+            .image {
+                img {
+                    width: 22em
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --darkFirstColor: #001F3F;
+  --darkSecondColor: #165981;
+  --darkThirdColor: #2F6F97;
+  --darkFourthColor: #6A9AB0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #001F3F;
+    --foreground: #ededed;
+  }
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+body {
+  @apply h-20 bg-customLight-background text-customLight-text dark:bg-customDark-background dark:text-customDark-text;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: 'Alexandria';
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+// Classes
+.wrapper {
+  padding: 0 140px;
+}
+@media (max-width: 1100px) {
+  .wrapper {
+      padding: 0 60px;
+  }
+}
+
+.ele-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// Elements
+.btn {
+  color: #FFF;
+  font-size: 18px;
+  width: 5em;
+  height: 2.2em;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+
+.title {
+  h2 {
+    font-size: 36px;
+    margin-bottom: 7px;
+  }
+
+  p {
+    font-size: 21px;
+    font-weight: 300;
+    max-width: 600px;
+    color: #D4D4D4;
+  }
+}
+
+.center-title {
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h2 {
+    font-size: 40px
+  }
+
+  p {
+    font-size: 21px;
+    font-weight: 300;
+    max-width: 600px;
+    // color: #D4D4D4;
+  }
+}

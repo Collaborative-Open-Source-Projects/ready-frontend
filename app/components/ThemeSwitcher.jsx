@@ -28,7 +28,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={handleThemeSwitch}
-      className="p-2 rounded-md text-sm bg-gray-200 dark:bg-gray-800 flex items-center justify-center"
+      className="p-2 rounded-md text-sm bg-gray-200 dark:bg-customDark-secondColor flex items-center justify-center"
       aria-label="Toggle Theme"
     >
       {theme === 'light' ? (
