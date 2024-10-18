@@ -1,7 +1,36 @@
 .homepage {
 
     .hero {
+        padding: 11em 0;
         .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6em;
+            width: 100%;
+          
+            .text {
+              width: 50%;
+
+              h1 {
+                font-size: 65px;
+                font-weight: 600; 
+                max-width: 48rem; 
+                line-height: 1.25; 
+              }
+          
+              p {
+                font-size: 24px;
+                font-weight: 300;
+                max-width: 600px
+              }
+          
+              .btn {
+                font-size: 1.25rem;
+                margin-top: 1rem;
+
+              }
+            }
 
             .text {
                 .btn {
@@ -24,11 +53,16 @@
 
         .wrapper {
             .comp-code {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 6em;
                 margin-top: 3em;
 
                 .comp {
                     color:#000;
                     background-color: #FFF;
+                    border-width: 8px;
                     border-radius: 7px;
                     padding: 14px;
                     width: 23em;
@@ -62,6 +96,9 @@
                             border-radius: 4px;
                             height: 2.4em;
                             width: 80%;
+                            border-width: 4px;
+                            outline: none;
+                            padding-left: 7px
                         }
                     }
     
@@ -196,8 +233,11 @@
         color: #FFF;
 
         .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 25px 30px;
-            width: 55%;
+            width: 65%;
             border-radius: 12px;
 
             .text {
@@ -258,5 +298,78 @@
                 }
             }
         }
+    }
+}
+
+
+//// Responsive
+
+// Hero Section
+@media (max-width: 1300px) {
+    .homepage .hero .wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 5em
+    }
+
+    .homepage .hero .wrapper .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepage .hero .wrapper .text p {
+        margin: 10px 0 5px;
+    }
+}
+@media (max-width: 800px) {
+    .homepage .hero .wrapper .text h1 {
+        font-size: 55px;
+    }
+    .homepage .hero .wrapper .text p {
+        font-size: 21px;
+    }
+
+    .homepage .hero .wrapper .logo img {
+        width: 16em;
+    }
+}
+
+
+// How ReadyFrontend Work Section
+@media (max-width: 1300px) {
+    .homepage .how-work .wrapper .comp-code {
+        flex-direction: column-reverse;
+        gap: 3em
+    }
+}
+@media (max-width: 700px) {
+    .how-work .wrapper .center-title h2 {
+        font-size: 35px;
+    }
+    .how-work .wrapper .center-title p {
+        font-size: 19px;
+        max-width: 450px;
+    }
+
+    .homepage .how-work .wrapper .comp-code .code .code-screen {
+        width: 32em;
+    }
+}
+
+
+// Discord Server Section
+@media (max-width: 1400px) {
+    .homepage .discord-server .wrapper {
+        flex-direction: column;
+        gap: 4em;
+        text-align: center;
+        padding: 40px 30px;
+    }
+    .homepage .discord-server .wrapper .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

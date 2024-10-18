@@ -10,13 +10,13 @@ export default function Home() {
     <div className="homepage">
         <Header />
 
-        <div className="hero py-52">
-            <div className="wrapper flex items-center justify-center gap-40 w-full">
-              <div className='text w-1/2'>
-                <h1 className='text-7xl font-semibold max-w-3xl leading-tight'>Free Ready Components To Use</h1>
-                <p className='text-2xl font-light max-w-2xl text-customLight-firstColor dark:text-customLight-thirdColor'>Save time and enhance your project by this collection of free and ready-to-use components</p>
+        <div className="hero">
+            <div className="wrapper">
+              <div className='text'>
+                <h1 className=''>Free Ready Components To Use</h1>
+                <p className='text-customLight-firstColor dark:text-customLight-thirdColor'>Save time and enhance your project by this collection of free and ready-to-use components</p>
                 <a href="#">
-                  <button className="btn text-xl mt-3 bg-customLight-firstColor dark:bg-customDark-secondColor">Explore</button>
+                  <button className="btn bg-customLight-firstColor dark:bg-customDark-secondColor">Explore</button>
                 </a>
               </div>
 
@@ -35,7 +35,7 @@ export default function Home() {
 
             <div className="top-3-features flex items-center justify-center flex-wrap gap-16">
                 <div className="fea bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor">
-                  <Image src={require('./Images/Icons/components-icon-white.png')}
+                  <Image src={require('../public/Images/Icons/components-icon-white.png')}
                         alt="icon"
                         width={64} 
                         height={64} 
@@ -45,7 +45,7 @@ export default function Home() {
                 </div>
 
                 <div className="fea bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor">
-                  <Image src={require('./Images/Icons/clock-icon-white.png')}
+                  <Image src={require('../public/Images/Icons/clock-icon-white.png')}
                         alt="icon"
                         width={64} 
                         height={64} 
@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
 
                 <div className="fea bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor">
-                  <Image src={require('./Images/Icons/improve-icon-white.png')}
+                  <Image src={require('../public/Images/Icons/improve-icon-white.png')}
                         alt="icon"
                         width={64} 
                         height={64} 
@@ -74,8 +74,8 @@ export default function Home() {
                 <p className='text-customLight-firstColor dark:text-customLight-thirdColor'>Choose the component you need and copy the code, easier than drinking water!</p>
             </div>
 
-            <div className="comp-code flex justify-center flex-col gap-32 md:flex-row">
-              <div className="comp border-8 border-customLight-firstColor dark:border-customDark-firstColor">
+            <div className="comp-code">
+              <div className="comp border-customLight-firstColor dark:border-customDark-firstColor">
                 <div className="comp-title">
                   <h3>Login</h3>
                   <p className=''>Welcome Back!</p>
@@ -83,11 +83,11 @@ export default function Home() {
 
                 <div className="inp">
                   <label for='username'>Username</label>
-                  <input className="border-4 border-customLight-firstColor dark:border-customDark-firstColor" type="text" id='username' />
+                  <input className="border-customLight-firstColor dark:border-customDark-firstColor" type="text" id='username' />
                 </div>
                 <div className="inp">
                   <label for='pass'>password</label>
-                  <input className="border-4 border-customLight-firstColor dark:border-customDark-firstColor" type="password" id='pass' />
+                  <input className="border-customLight-firstColor dark:border-customDark-firstColor" type="password" id='pass' />
                 </div>
 
                 <button className="bg-customLight-firstColor dark:bg-customDark-firstColor">LOGIN</button>
@@ -131,7 +131,7 @@ export default function Home() {
 
               <div className='types flex items-center justify-center flex-wrap gap-12'>
                 <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/header-icon-white.png')} alt='icon'
+                  <Image src={require('../public/Images/Icons/header-icon-white.png')} alt='icon'
                          width={45}
                          height={45}
                   />
@@ -140,7 +140,7 @@ export default function Home() {
                 </div>
 
                 <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/button-icon-white.png')} alt='icon'
+                  <Image src={require('../public/Images/Icons/button-icon-white.png')} alt='icon'
                          width={45}
                          height={45}
                   />
@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
 
                 <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/alert-icon-white.png')} alt='icon'
+                  <Image src={require('../public/Images/Icons/alert-icon-white.png')} alt='icon'
                          width={45}
                          height={45}
                   />
@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
 
                 <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/404page-icon-white.png')} alt='icon'
+                  <Image src={require('../public/Images/Icons/404page-icon-white.png')} alt='icon'
                          width={45}
                          height={45}
                   />
@@ -167,7 +167,7 @@ export default function Home() {
                 </div>
 
                 <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/testimonial-icon-white.png')} alt='icon'
+                  <Image src={require('../public/Images/Icons/testimonial-icon-white.png')} alt='icon'
                          width={45}
                          height={45}
                   />
@@ -176,16 +176,7 @@ export default function Home() {
                 </div>
 
                 <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/header-icon-white.png')} alt='icon'
-                         width={45}
-                         height={45}
-                  />
-                  <h4>More</h4>
-                  <p>Many components to help you!</p>
-                </div>
-
-                <div className='type bg-customLight-background border-4 border-black dark:bg-customDark-firstColor dark:border-customDark-firstColor'>
-                  <Image src={require('./Images/Icons/header-icon-white.png')} alt='icon'
+                  <Image src={require('../public/Images/Icons/header-icon-white.png')} alt='icon'
                          width={45}
                          height={45}
                   />
@@ -197,7 +188,7 @@ export default function Home() {
         </div>
 
         <div className='discord-server'>
-          <div className='wrapper bg-gradient-to-l from-customLight-firstColor to-customLight-secondColor dark:from-customDark-firstColor dark:to-customDark-secondColor flex items-center justify-between flex-col md:flex-row'>
+          <div className='wrapper bg-gradient-to-l from-customLight-firstColor to-customLight-secondColor dark:from-customDark-firstColor dark:to-customDark-secondColor'>
             <div className='text'>
               <div className='online-users'>
                 <div className='circle'></div>
@@ -209,21 +200,21 @@ export default function Home() {
 
               <ul className='server-features'>
                 <li>
-                  <Image src={require('./Images/Icons/success-icon-white.png')}
+                  <Image src={require('../public/Images/Icons/success-icon-white.png')}
                          alt="icon"
                   />
                   <p>Meet and connect with developers</p>
                 </li>
 
                 <li>
-                  <Image src={require('./Images/Icons/success-icon-white.png')}
+                  <Image src={require('../public/Images/Icons/success-icon-white.png')}
                          alt="icon"
                   />
                   <p>Stay up to date with our news</p>
                 </li>
 
                 <li>
-                  <Image src={require('./Images/Icons/success-icon-white.png')}
+                  <Image src={require('../public/Images/Icons/success-icon-white.png')}
                          alt="icon"
                   />
                   <p>Know the challenge dates in advance.</p>
@@ -234,7 +225,7 @@ export default function Home() {
             </div>
 
             <div className='image'>
-              <Image src={require('./Images/discord.png')} alt='discord-icon-image' />
+              <Image src={require('../public/Images/discord.png')} alt='discord-icon-image' />
             </div>
           </div>
         </div>

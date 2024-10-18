@@ -1,6 +1,8 @@
-footer .wrapper .logo img {
-  width: 70px;
+footer .newsletter form .btn {
+  width: 6.5em;
 }
-footer .wrapper .newsletter form [type=submit] {
-  width: 7em;
+@media (max-width: 1280px) {
+  .logo img {
+    width: 70px;
+  }
 }/*# sourceMappingURL=footer.css.map */
